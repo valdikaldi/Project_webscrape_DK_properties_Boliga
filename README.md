@@ -13,7 +13,7 @@ Unlike the other web scraping project where I web scrape the website www.boligas
 
 In addition, the objective here is only to gather residential properties during the period 2012 to 2023. The reason for this is due to the project "Empirical_Project-are_home_buyers_inattentive_towards_energy_efficiency". In short, the Danish authorities implemented a policy in 2012 that made it mandatory to display EPC labels (Energy efficiency of properties) in advertisements. The effect of this policy has already been investigated. Therefore, we exclude sales before 2012 as the objective of the empirical project is to investigate other matters. 
 
-## The bot : 
+## Overview of the script : 
 
 ![The "hidden" API - first step - getting the property IDs](hidden_api_FirstStep.PNG)
 

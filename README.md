@@ -18,7 +18,8 @@ Unlike the website boligsiden.dk - here the API doesnt seem to have any limitati
 
 The webscraping process is split into two steps, first gather property ID's then extract property information then we run another script where we loop over each ID and extract the information of the property.
 
-The first step is to go over each page and gather their property ID numbers- in this case the unique ID is given under the JSON key "UID". With this ID I am able to access the JSON file containing the property characteristics and their transaction prices of each property in the next step. Thankfully, we can access the IDs through a "hidden" API under https://api.boliga.dk/. The image below shows how to find the API. Particularily, how to access the API endpoint with the property IDs (which in my case is : https://api.boliga.dk/api/v2/sold/search/results?searchTab=1&propertyType=1,2,3&saleType=1&salesDateMin=2006&salesDateMax=2023&sort=date-d) 
+The first step is to go over each page and gather their property ID numbers- in this case the unique ID is given under the JSON key "UID". With this ID I am able to access the JSON file containing the property characteristics and their transaction prices of each property in the next step. Thankfully, we can access the IDs through a "hidden" API under https://api.boliga.dk/. The image below shows how to find the API. Particularily, how to access the API endpoint with the property IDs 
+(which in my case is : https://api.boliga.dk/api/v2/sold/search/results?searchTab=1&propertyType=1,2,3&saleType=1&salesDateMin=2006&salesDateMax=2023&sort=date-d) 
 
 Before I run the script I initiallize certain parameters, as mentioned in the "description" chapter above. Based on these parameters, the boliga.dk website has in store 1.513.574 properties. Each page displayes 50 properties which means that there should be in total 30.272 pages. 
 

@@ -11,7 +11,7 @@ In this project, I web scrape the website [www.boliga.dk](https://www.boliga.dk/
 
 Unlike the other web scraping project where I web scrape the website www.boligasiden.dk - here I am able to get both transaction price and listing price. In addition, boliga.dk provides data on the sales duration of properties and more details on the property characteristics. 
 
-Furthermore, the objective here is only to gather residential properties, properties sold between 2006 to 2023 and properties sold under a "normal" transaction condition. The reason for this is due to the project "Empirical_Project-are_home_buyers_inattentive_towards_energy_efficiency", were I investigate how much consumers are willing to pay for energy efficient components of properties. 
+Furthermore, the objective here is only to gather residential properties, properties sold between 2006 to 2023 and properties sold under a "normal" transaction conditions (e.g. excluding properties sold between family or at a auction). The reason for this is due to the project "Empirical_Project-are_home_buyers_inattentive_towards_energy_efficiency", were I investigate how much consumers are willing to pay for energy efficient components of properties. 
 
 ## Overview of the code : 
 Unlike the website boligsiden.dk - here the API doesnt seem to have any limitations. 

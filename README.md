@@ -22,8 +22,13 @@ In addition, the objective here is only to gather residential properties during 
 
 ## Result : 
 With this script I was able to gather :
+* 2.623.340 property transactions (real prices)
+* Property characteristics of 1.031.595 unique properties
+    
+However, after analysing the data and cleaning it from potential data errors and duplicated properties I end up with a clean dataset of:
 * 2.295.344 million property tranactions (sale prices)
 * Property characteristics of 981.469 unique properties
+* This version was utilized in the empirical project
 
 ### Example Data
 

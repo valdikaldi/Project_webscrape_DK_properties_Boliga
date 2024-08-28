@@ -11,14 +11,15 @@ In this project, I web scrape the website [www.boliga.dk](https://www.boliga.dk/
 
 Unlike the other web scraping project where I web scrape the website www.boligasiden.dk - here I am able to get both transaction price and listing price. In addition, boliga.dk provides data on the sales duration of properties and more details on the property characteristics. 
 
-Furthermore, the objective here is only to gather residential properties, properties sold between 2006 to 2023 and properties sold under a "normal" transaction condition. The reason for this is due to the project "Empirical_Project-are_home_buyers_inattentive_towards_energy_efficiency", were I investigate how much consumers are willing to pay for energy efficient components of properties. 
+Furthermore, the objective here is only to gather residential properties, properties sold between 2006 to 2023 and properties sold under a "normal" transaction conditions (e.g. excluding properties sold between family or at a auction). The reason for this is due to the project "Empirical_Project-are_home_buyers_inattentive_towards_energy_efficiency", were I investigate how much consumers are willing to pay for energy efficient components of properties. 
 
-## Overview of the script : 
+## Overview of the code : 
 Unlike the website boligsiden.dk - here the API doesnt seem to have any limitations. 
 
 The webscraping process is split into two steps, first gather property ID's then extract property information then we run another script where we loop over each ID and extract the information of the property.
 
-The first step is to go over each page and gather their property ID numbers- in this case the unique ID is given under the JSON key "UID". With this ID I am able to access the JSON file containing the property characteristics and their transaction prices of each property in the next step. Thankfully, we can access the IDs through a "hidden" API under https://api.boliga.dk/. The image below shows how to find the API. Particularily, how to access the API endpoint with the property IDs (which in my case is : https://api.boliga.dk/api/v2/sold/search/results?searchTab=1&propertyType=1,2,3&saleType=1&salesDateMin=2006&salesDateMax=2023&sort=date-d) 
+The first step is to go over each page and gather their property ID numbers- in this case the unique ID is given under the JSON key "UID". With this ID I am able to access the JSON file containing the property characteristics and their transaction prices of each property in the next step. Thankfully, we can access the IDs through a "hidden" API under https://api.boliga.dk/. The image below shows how to find the API. Particularily, how to access the API endpoint with the property IDs 
+(which in my case is : https://api.boliga.dk/api/v2/sold/search/results?searchTab=1&propertyType=1,2,3&saleType=1&salesDateMin=2006&salesDateMax=2023&sort=date-d) 
 
 Before I run the script I initiallize certain parameters, as mentioned in the "description" chapter above. Based on these parameters, the boliga.dk website has in store 1.513.574 properties. Each page displayes 50 properties which means that there should be in total 30.272 pages. 
 
@@ -37,15 +38,17 @@ To find this API endpoint I recommend navigating to the property info page with 
 
 
 ## Result : 
-With this script I was able to gather :
+I was able to gather :
 * 2.623.340 property transactions (real prices)
+* for the period: 2006 to 2023
 * Property characteristics of 1.031.595 unique properties
     
 However, after analysing the data and cleaning it from potential data errors and duplicated properties I end up with a clean dataset of:
 * 2.295.344 million property tranactions (sale prices)
 * Property characteristics of 981.469 unique properties
+* for the period: 2006 to 2023
 * This version was utilized in the empirical project
 
 ### Example Data
 
-You can view the example of the tabular data from the final result in the CSV file located in the example_data folder.
+You can view an example of the tabular data from the final result in the CSV file located in the example_data folder

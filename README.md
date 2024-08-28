@@ -37,7 +37,7 @@ To find this API endpoint I recommend navigating to the property info page with 
 
 
 ## Result : 
-With this script I was able to gather :
+I was able to gather :
 * 2.623.340 property transactions (real prices)
 * Property characteristics of 1.031.595 unique properties
     

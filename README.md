@@ -6,14 +6,14 @@
 
 ![Boligsiden Front page](frontpage.PNG)
 
-## Description : 
+## <img src="markdown_icons/info_icon.svg" alt="Info Icon" width="50" height="25"> Description : 
 In this project, I web scrape the website [www.boliga.dk](https://www.boliga.dk/), gathering detailed data on property characteristics and historic transaction prices for the Danish housing market. 
 
 Unlike the other web scraping project where I web scrape the website www.boligasiden.dk - here I am able to get both transaction price and listing price. In addition, boliga.dk provides data on the sales duration of properties and more details on the property characteristics. 
 
 Furthermore, the objective here is only to gather residential properties, properties sold between 2006 to 2023 and properties sold under a "normal" transaction conditions (e.g. excluding properties sold between family or at a auction). The reason for this is due to the project "Empirical_Project-are_home_buyers_inattentive_towards_energy_efficiency", were I investigate how much consumers are willing to pay for energy efficient components of properties. 
 
-## Overview of the code : 
+## <img src="markdown_icons/code.svg" alt="Info Icon" width="50" height="25"> Overview of the code : 
 Unlike the website boligsiden.dk - here the API doesnt seem to have any limitations. 
 
 The webscraping process is split into two steps, first gather property ID's then extract property information then we run another script where we loop over each ID and extract the information of the property.
@@ -37,7 +37,7 @@ To find this API endpoint I recommend navigating to the property info page with 
 ![The "hidden" API - second step - gathering property sales and characteristics](hidden_api_SecondStep.PNG)
 
 
-## Result : 
+## <img src="markdown_icons/result.svg" alt="Info Icon" width="50" height="25"> Result : 
 I was able to gather :
 * 2.623.340 property transactions (real prices)
 * for the period: 2006 to 2023

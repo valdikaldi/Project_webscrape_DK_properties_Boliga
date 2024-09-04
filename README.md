@@ -47,7 +47,7 @@ However, after analysing the data and cleaning it from potential data errors and
 * 2.295.344 million property tranactions (sale prices)
 * Property characteristics of 981.469 unique properties
 * for the period: 2006 to 2023
-* This version was utilized in the empirical project
+* This version was utilized in the empirical project (with some additional data cleaning and filtering)
 
 ### Example Data
 
